@@ -20,14 +20,16 @@ int main(void)
 		}
 		else if (n % 5 == 0)
 		{
-		printf("Buzz ");
+		printf("Buzz");
+		if (n == 100)
+		break;
+		printf(" ");
 		}
 		else
 		{
 		printf("%d ", n);
 		}
-	printf("\n");
 	}
-
+	printf("\n");
 return (0);
 }
