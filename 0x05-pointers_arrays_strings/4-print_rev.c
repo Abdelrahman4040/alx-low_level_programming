@@ -1,7 +1,6 @@
-
 #include "main.h"
 /**
- * print_re - Entry point
+ * print_rev - Entry point
  * @s: ptr to character
  * Return: 0
  */
