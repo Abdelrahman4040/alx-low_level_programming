@@ -1,27 +1,23 @@
+
 #include "main.h"
 /**
- * rev_string - Entry point
+ * print_re - Entry point
  * @s: ptr to character
  * Return: 0
  */
-void rev_string(char *s)
+void print_rev(char *s)
 {
-	int i, length = 0;
-	int j;
-	char temp;
+	char *temp = s;
+	int i;
 
-	while (s[length] != '\0')
+	while (*temp != '\0')
 	{
-		length++;
+		temp++;
 	}
-
-	j = length - 1;
-
-	for (i = 0; i < j; i++)
+	for (i = temp - s; i > 0; i--)
 	{
-		temp = s[i];
-		s[i] = s[j];
-		s[j] = temp;
-		j--;
+		_putchar(*temp);
+		temp--;
 	}
+	_putchar('\n');
 }
