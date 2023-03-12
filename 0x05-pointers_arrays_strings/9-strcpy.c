@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * print_array - Entry point
- * @a: ptr to int
- * @n: number
- * Return: 0
+ * *_strcpy - Entry point
+ * @dest: ptr to cahr
+ * @src: ptr to char
+ * Return: ptr
  */
 char *_strcpy(char *dest, char *src)
 {
@@ -13,7 +13,7 @@ char *_strcpy(char *dest, char *src)
 	{
 		i++;
 	}
-	i++;
+	
 	for (; i >= 0; i--)
 	{
 		dest[i] = src[i];
