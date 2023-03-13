@@ -1,25 +1,27 @@
+#include "main.h"
 /**
- * _strcat - add two strings together
- * @dest: First string
- * @src: Last string
- * Return: returns full string.
+ * **_strcat - Entry point
+ * @dest: ptr to cahr
+ * @src: ptr to char
+ * Return: ptr
  */
 char *_strcat(char *dest, char *src)
 {
-int i, j;
-i = 0;
-j = 0;
+	int i = 0;
+	int j = 0;
 
-while (dest[i] != '\0')
-	i++;
-
-while (src[j] != '\0')
-{
-dest[i] = src[j];
-i++;
-j++;
-}
-dest[i] = '\0';
-
-return (dest);
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+	while (src[j] != '\0')
+	{
+		j++;
+	}
+	for (; j >= 0; j--)
+	{
+		dest[i+j] = src[j];
+		
+	}
+	return (dest);
 }
